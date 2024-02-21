@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beginner English Course</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Beginner English Course</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="course-content">
+    <div class="container">
+      <h2>Welcome to the Beginner English Course!</h2>
+      <p>This course is designed for absolute beginners who are new to learning English. Throughout the course, you will learn basic vocabulary, grammar, and pronunciation to help you build a solid foundation in the English language.</p>
+      
+      <h3>Lessons:</h3>
+      <ol>
+        <li>
+          <h4>Introduction to English Alphabet and Pronunciation</h4>
+          <p>Learn the English alphabet and basic pronunciation rules.</p>
+          <button onclick="startLesson('lesson1')">Start Lesson</button>
+        </li>
+        <li>
+          <h4>Basic Greetings and Expressions</h4>
+          <p>Learn common greetings and expressions used in everyday situations.</p>
+          <button onclick="startLesson('lesson2')">Start Lesson</button>
+        </li>
+        <!-- Add more lessons here -->
+      </ol>
+      
+      <h3>Quizzes:</h3>
+      <ol>
+        <li>
+          <h4>Alphabet and Pronunciation Quiz</h4>
+          <p>Test your knowledge of the English alphabet and pronunciation.</p>
+          <button onclick="startQuiz('quiz1')">Start Quiz</button>
+        </li>
+        <li>
+          <h4>Greetings and Expressions Quiz</h4>
+          <p>Test your understanding of basic greetings and expressions.</p>
+          <button onclick="startQuiz('quiz2')">Start Quiz</button>
+        </li>
+        <!-- Add more quizzes here -->
+      </ol>
+      
+      <!-- Add more lessons and quizzes as needed -->
+      
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 English Online Learning Platform</p>
+    </div>
+  </footer>
+
+  <script>
+    function startLesson(lesson) {
+      // Redirect to the lesson page based on the lesson ID
+      window.location.href = lesson + '.html';
+    }
+
+    function startQuiz(quiz) {
+      // Redirect to the quiz page based on the quiz ID
+      window.location.href = quiz + '.html';
+    }
+  </script>
+</body>
+</html>
